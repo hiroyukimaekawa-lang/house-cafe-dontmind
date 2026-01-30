@@ -321,6 +321,19 @@ nav a:hover {
     transition: var(--transition);
 }
 
+.gallery-row {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.gallery-row .gallery-item {
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
 .gallery-item:hover {
     transform: translateY(-10px);
 }
@@ -578,6 +591,26 @@ footer {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
+    }
+
+    .gallery-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .section#menu p {
+        font-size: 0.9rem;
+    }
+
+    .insta-banner {
+        padding: 15px 25px;
+        font-size: 1rem;
+        gap: 10px;
+        white-space: nowrap;
+    }
+
+    .insta-banner span {
+        font-size: 0.95rem;
     }
 
     .section {
